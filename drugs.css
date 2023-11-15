@@ -1,0 +1,297 @@
+body
+{
+    padding-top: 100px;
+}
+.introimg
+{
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    background-image:linear-gradient(to bottom, transparent 0%, white 100% ), url('com.jpg');
+}
+/*Introduction */
+.introduction
+{
+    margin: 5%;
+}
+.introduction h1
+{
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 28px;
+}
+.introduction p
+{
+    text-align: justify;
+    font-size: 18px;
+    font-weight:normal ;
+    line-height: 1.5;
+    color: black;
+}
+/*End Introduction*/
+
+
+/*statistics section*/
+.statistics
+{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.statistics div
+{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.statistics div:hover
+{
+    background-color: whitesmoke;
+}
+.statistics div h1
+{
+     text-transform: capitalize;
+     font-size: 22px;
+     margin: 10px;
+}
+.statistics div p
+{
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
+    color: black;
+}
+/*End statistics section*/
+
+
+/*About Drugs Section*/
+
+.aboutdrugs
+{
+    margin: 3%;
+}
+.aboutdrugs h1
+{
+    text-align: center;
+    font-size: 54px;
+}
+.aboutdrugs h2
+{
+    text-align: center;
+    font-size: 44px;
+    color: rgb(87, 2, 2);
+}
+.aboutdrugs div h3
+{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 50px;
+}
+.aboutdrugs div h4
+{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.aboutdrugs div .effects
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.aboutdrugs div .effects div
+{
+    margin: 10px;
+    text-align: justify;
+}
+.aboutdrugs div .effects div h4
+{
+    font-size: 22px ;
+}
+.aboutdrugs div .effects div p
+{
+    font-size: 18px;
+    color: black;
+}
+
+.categories h1
+{
+    font-size:46px ;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+.categories .depressants .dagga h1,
+.categories .stimulants .crystalmeth h1
+{
+    font-size: 38px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.categories .depressants .dagga h2,
+.categories .stimulants .crystalmeth h2
+{
+    text-align: left;
+    font-size: 22px;
+    color: black;
+    margin-left:25% ;
+    margin-top: 20px;
+}
+.categories .depressants .dagga ul,
+.categories .stimulants .crystalmeth ul
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    margin-left:25% ;
+    font-size: 18px;
+}
+.categories .depressants .dagga p,
+.categories .stimulants .crystalmeth p
+{
+    color: black;
+    text-align: justify;
+    font-size: 18px;
+    width: 90%;
+    margin-left: 5%;
+}
+.categories .depressants .dagga .effects h1,
+.categories .stimulants .crystalmeth .effects h1
+{
+    font-size: 22px;
+}
+/*End About Drugs Section*/
+
+
+/*media querying for Small Phone*/
+
+@media screen and (max-width:400px)
+{
+
+.introimg
+{
+    height: 200px;
+}
+/*Introduction */
+.introduction h1
+{
+    font-size: 18px;
+}
+.introduction p
+{
+    font-size: 12px;
+    line-height: 1.2;
+}
+/*End Introduction*/
+
+
+/*statistics section*/
+.statistics
+{
+    display:flex;
+    flex-direction:column ;
+}
+.statistics div
+{
+    margin: 5px;
+    padding: 5px;
+}
+.statistics div h1
+{
+     font-size: 16px;
+     margin: 5px;
+}
+.statistics div p
+{
+    line-height: 1.2;
+    font-size: 12px;
+    font-weight: lighter;
+}
+/*End statistics section*/
+
+
+/*About Drugs Section*/
+
+.aboutdrugs h1
+{
+    text-align: center;
+    font-size: 28px;
+}
+.aboutdrugs h2
+{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(87, 2, 2);
+}
+.aboutdrugs div h3
+{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.aboutdrugs div h4
+{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.aboutdrugs div .effects
+{
+    display:flex;
+    flex-direction: column;
+}
+.aboutdrugs div .effects div
+{
+    margin: 0px;
+    text-align: justify;
+}
+.aboutdrugs div .effects div h4
+{
+    margin-top:10px ;
+    font-size: 14px ;
+}
+.aboutdrugs div .effects div p
+{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.categories h1
+{
+    font-size:22px ;
+    margin-top: 20px;
+}
+.categories .depressants .dagga h1,
+.categories .stimulants .crystalmeth h1
+{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.categories .depressants .dagga h2,
+.categories .stimulants .crystalmeth h2
+{
+    font-size: 14px;
+    margin-left:10% ;
+    margin-top: 10px;
+}
+.categories .depressants .dagga ul,
+.categories .stimulants .crystalmeth ul
+{
+    width: 80%;
+    margin-left:5% ;
+    font-size: 14px;
+}
+.categories .depressants .dagga p,
+.categories .stimulants .crystalmeth p
+{
+    font-size: 12px;
+    width: 90%;
+    font-weight: lighter;
+    line-height: 1.3;
+}
+.categories .depressants .dagga .effects h1,
+.categories .stimulants .crystalmeth .effects h1
+{
+    font-size: 12px;
+}
+/*End About Drugs Section*/    
+}
