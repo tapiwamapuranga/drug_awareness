@@ -748,6 +748,291 @@ color: rgb(0, 255, 0);
 
 
 /*Media Screen for small phone*/
+@media only screen and (max-width:400px) 
+{
+/* Home Section */
+#home .home {
+  max-width: 100%;
+  padding-top: 60px;
+  padding: 20px 50px;
+  flex-direction: column;
+}
+#home h1 {
+  display: block;
+  width: fit-content;
+  font-size: 3rem;
+}
+
+#home .home .introduction p
+{
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 20px;
+  text-align: justify;
+  font-weight: lighter;
+}
+/* End Home Section */
+
+/*About Drugs Section*/
+.about-drugs
+{
+  width: 85%;
+}
+.about-drugs h1
+{
+  font-size: 26px;
+}
+.about-drugs p
+{
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.2;
+}
+.about-drugs-grid
+{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 0%;
+}
+ .about-drugs-grid div
+{
+  margin-left: 2%;
+  margin-top: 10%;
+  padding: 4%;
+  min-height:280px ;
+}
+.about-drugs-grid div:nth-child(2)
+{
+  margin-top: 10%;
+  padding: 15%;
+}
+.about-drugs-grid div:nth-child(3)
+{
+  padding-left: 10%;
+  padding-top: 10%;
+}
+.about-drugs-grid h3
+{
+  font-size: 16px;
+}
+.about-drugs-grid a
+{
+  font-size: 16px;
+}
+/*End About Drugs Section*/
+
+
+/*Impact of Drugs Section*/
+.impactofdrugs
+{
+  display: flex;
+  flex-direction: column  ;
+  margin-top: 10%;
+  cursor: pointer;
+}
+.impactofdrugs h1
+{
+  text-align: center;
+  font-size: 24px;
+  margin: 5%;
+}
+.impactofdrugs .impactofdrugs-grid
+{
+  display:flex;
+  flex-direction: column;
+  margin: 5%;
+  padding: 8px;
+}
+
+.impactofdrugs .impactofdrugs-grid div:nth-child(1)
+{
+  background-color: transparent;
+  background-image: url('imp.jpg'); 
+  margin-right: 0%;
+  border-radius: 10px;
+}
+.impactofdrugs .impactofdrugs-grid p
+{
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: lighter;
+}
+/*End Impact of Drugs Section*/
+
+/* Treatment and Recovery Section */
+
+#treatment .treatment-top .treatment-title
+{
+  font-size: 24px;
+  font-weight: 650;
+}
+#treatment .treatment-top p
+{
+  font-size: 18px;
+  opacity: 1;
+}
+#treatment .treatment-bottom {
+  display: flex;
+  margin-top: 10px;
+}
+
+#treatment .treatment-item {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5%;
+}
+
+#treatment .treatment-item h2 {
+  font-size: 18px;
+  margin: 10px;
+}
+#treatment .treatment-item p {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: lighter;
+}
+/* End Treatment and Recovery Section */
+
+/* Supportng Loved Ones section */
+#support .support {
+  flex-direction: column;
+  max-width:90%;
+  margin: 5%;
+  padding: 0px;
+}
+.support-title
+{
+  font-size: 24px;
+}
+#support .support-header h1 {
+  margin-bottom: 0px;
+}
+#support .support-item {
+  width: 90%;
+  margin: 2px;
+  margin-bottom: 5%;
+}
+#support .support-info {
+  padding: 10px;
+  text-align: justify;
+}
+#support .support-info h1 {
+  font-size: 22px;
+  margin: 5px;
+}
+/* End Supporting Loved ones section */
+
+/* About Section */
+#about .about {
+  max-width: 400px;
+  margin-top: 5%;
+  margin: bottom 0px; ;
+}
+#about .col-left
+{
+  display: none;
+}
+#about .col-right  h1
+{
+  margin-top: 0px;
+  font-size: 24px;
+}
+#about .col-right h2 {
+  font-size: 18px;
+}
+#about .col-right p {
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+#about .col-right .cta {
+  border-color: #0d2750;
+  margin-bottom: 0px;
+}
+/* End About Section */
+
+/*Testimonial Section*/
+.testimonial
+{
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.testimonial div
+{ 
+  grid-template-columns: 0px 1fr;
+}
+
+.testimonial div p
+{
+  background-image: linear-gradient(to top,transparent 0%, grey 100%) , url('u20.jpg');
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  line-height: 1.5;
+  margin-right: 0%;
+  width: 90%;
+  height: 80%;
+  margin: 5%;
+  margin-bottom: 0%;
+  padding: 5%;
+}
+/*End Testimonial section*/
+
+  /* contact  */
+  #contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+  }
+  #contact .contact-items {
+    width: 90%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #contact .contact-item {
+    width: 90%;
+    margin: 5%;
+    flex-direction: row;
+  }
+  #contact .contact-item .icon {
+    height: 100px;
+    width: 100px;
+  }
+  #contact .contact-item .icon img {
+    object-fit: contain;
+  }
+  #contact .contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+  /* End contact  */
+/* Footer */
+#footer {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer {
+  min-height: 100px;
+  padding-top: 20px;
+}
+#footer h2 {
+  color: aliceblue;
+  font-weight: 500;
+  font-size:24px;
+  letter-spacing: .1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* End Footer */
+}
+
+/*Media Screen for small phone*/
 @media only screen and (min-width:400px) 
 {
 /* Home Section */
